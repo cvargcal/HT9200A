@@ -1,1 +1,1 @@
-# HT9200A
+HT9200A Library for PIC CCS
