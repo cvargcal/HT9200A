@@ -1,3 +1,6 @@
+// Example: Generate 0-9, A,B,C,D tone
+
+
 #include <18F26K22.h>
 #Device  PASS_STRINGS=IN_RAM  
 #ZERO_RAM     
@@ -8,8 +11,8 @@
 #use delay(clock=20M) 
 #use fast_io(A) 
 #use fast_io(B) 
-#use rs232(baud=9600,bits=8,parity=N,xmit=PIN_C6,rcv=PIN_C7,ERRORS,stream=debug)  // Configuración UART1 (Hardware)
-#use rs232(baud=9600,bits=8,parity=N,xmit=PIN_B6,rcv=PIN_B7,ERRORS,stream=uart2)  // Configuración UART2 (Hardware)
+#use rs232(baud=9600,bits=8,parity=N,xmit=PIN_C6,rcv=PIN_C7,ERRORS,stream=debug)  // ConfiguraciÃ³n UART1 (Hardware)
+#use rs232(baud=9600,bits=8,parity=N,xmit=PIN_B6,rcv=PIN_B7,ERRORS,stream=uart2)  // ConfiguraciÃ³n UART2 (Hardware)
 #define FASTER_BUT_MORE_ROM                                                       // Variables en memoria
 #include "HT9200A.h"                                                              // HT9200.h  defines for HT9200 DTMF chip in serial mode 
 
